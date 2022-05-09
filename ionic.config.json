@@ -1,0 +1,7 @@
+{
+  "name": "TAI-Farmos-IonicReact",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
