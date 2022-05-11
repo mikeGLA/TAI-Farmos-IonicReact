@@ -1,13 +1,14 @@
 import { IonApp, IonCol, IonContent, IonHeader, IonInput, IonItem, IonLabel, IonRow, IonTitle, IonToolbar, IonGrid, IonButton } from '@ionic/react';
 import React from 'react';
 import "./RegisterPage.css";
+import { Link } from 'react-router-dom';
 
 const RegisterPage = () => {
   return (
     <IonApp>
         <IonHeader>
             <IonToolbar>
-                <IonTitle>Register Form</IonTitle>
+                <IonTitle color='primary'>Register Form</IonTitle>
             </IonToolbar>
         </IonHeader>
         <IonContent className='Reg-Form'>
@@ -77,12 +78,12 @@ const RegisterPage = () => {
                 </IonItem>
               </IonCol>
             </IonRow>
-            <IonRow>
+            <IonRow className='Reg-Button'>
               <IonCol>
                 <IonButton>Submit</IonButton>
               </IonCol>
               <IonCol>
-                <IonButton>LogIn</IonButton>
+                <Link to="/loginpage"><IonButton>LogIn</IonButton></Link>
               </IonCol>
             </IonRow>
           </IonGrid>

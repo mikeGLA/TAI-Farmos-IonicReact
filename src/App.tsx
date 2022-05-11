@@ -3,6 +3,7 @@ import { IonApp, IonFooter, IonRouterOutlet, IonToolbar, setupIonicReact } from 
 import { IonReactRouter } from '@ionic/react-router';
 import LoginPage from './LoginPage/LoginPage';
 import RegisterPage from './LoginPage/RegisterPage/RegisterPage';
+import { Dashboard } from './Dashboard/Dashboard';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,7 +22,8 @@ import '@ionic/react/css/core.css';
 // import '@ionic/react/css/display.css';
 
 /* Theme variables */
-import './theme/variables.css';
+// import './theme/variables.css';
+
 
 setupIonicReact();
 
@@ -34,6 +36,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/registration">
           <RegisterPage/>
+        </Route>
+        <Route exact path="/dashboard">
+          <Dashboard/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

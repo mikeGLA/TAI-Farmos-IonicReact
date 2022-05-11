@@ -1,0 +1,282 @@
+.Dashborad-header {
+    height: 295px;      
+    background: linear-gradient(180deg, #009CFF 0%, #DC257D 100%);
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  .Dashborad-body{
+    height: 680px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(241, 248, 248, 0) 0%, #F1F8F8 100%);
+  }
+  
+ 
+ .set-date-container{
+   padding-top: 10px;
+ }
+
+ .greeting-container{
+   height: 35px;
+    /* border: 1px solid blue; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    
+ }
+
+ .Weather-Text{
+    margin-top: 14px;
+    margin-left: 14px;
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+ }
+
+ .Weather-Box-TempReport{
+    height: 85px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+ }
+
+ .Weather-TempCurrent{
+   text-align: center;
+   color:white;
+   margin: auto;
+ }
+
+ .TempNow{
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 56px;  
+ }
+
+ .SkyLook{
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+ }
+
+.Weather-TempHighLow{
+  height: 85px;
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Weather-TempLow{
+  margin-top: 10px;
+  height: 68px;
+  width: 88px;
+  background: #009CFF;
+  border-radius: 8px;
+}
+
+.TempLow-Text{
+  padding-top: 4px;
+ height: 20px;
+
+ font-style: normal;
+ font-weight: 400;
+ font-size: 15px;
+ letter-spacing: 0.2px;
+}
+
+.TempLow-Num{
+  padding-top: 4px;
+ height: 10px;
+
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ letter-spacing: 0.2px;
+}
+
+
+
+.Weather-TempHigh{
+  margin-top: 10px;
+  height: 68px;
+  width: 88px;
+  background: #CD4B8A;
+  border-radius: 8px;
+}
+
+.TempHigh-Text{
+  padding-top: 4px;
+ height: 20px;
+
+ font-style: normal;
+ font-weight: 400;
+ font-size: 15px;
+ letter-spacing: 0.2px;
+}
+
+.TempHigh-Num{
+  padding-top: 4px;
+ height: 10px;
+
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ letter-spacing: 0.2px;
+}
+
+ .date-container{
+  /* border: 1px solid red; */
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 80%;
+  color: #FFFFFF;
+  margin-left: 20px;
+ }
+
+ .Weather-box{
+  position: absolute;
+  background-color: rgba(219, 223, 227, 0.75);
+  border-radius: 10px;
+  width: 335px;
+  height: 148px;
+  margin-left: 20px;
+  color: white;
+
+ }
+
+
+
+.header-grid-bar-title{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+ 
+.notic-container{
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 40px
+}
+
+ 
+
+.notic-container{
+  width: 60%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  margin-left: 65px;
+}
+
+.notic-icon-1{
+    
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.notic-icon-2{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: white;
+ 
+}
+
+.ringBell{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.taiLogo{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* media query for varies screen size */
+
+@media screen and (min-width: 600px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 8em;
+    margin-left: 29%;
+   }
+}
+
+/* below mainly is for tablet screen */
+
+@media screen and (min-width: 799px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 29%;
+   }
+
+   .notic-container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 170px;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 13em;
+   }
+}
+
+@media screen and (min-width: 809px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 15em;
+   }
+}
+
+@media screen and (min-width: 961px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 19em;
+   }
+}
+
+@media screen and (min-width: 961px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 19em;
+   }
+}
+
+@media screen and (min-width: 1023px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 21em;
+   }
+}
+
+@media screen and (min-width: 1079px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 23em;
+   }
+}
+
+@media screen and (min-width: 1279px){
+  .Weather-box{
+    position: absolute;
+    margin-left: 29em;
+   }
+}
+

@@ -1,4 +1,4 @@
-import { IonApp, IonButton, IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonLabel, IonRow, IonTitle, IonToolbar, IonIcon } from '@ionic/react'
+import { IonApp, IonButton, IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonLabel, IonRow, IonTitle, IonToolbar, IonIcon, IonRouterLink } from '@ionic/react'
 import React from 'react';
 import "./LoginPage.css";
 import {keyOutline, readerOutline} from "ionicons/icons";
@@ -37,7 +37,7 @@ const LoginPage = () => {
                     <IonCol className='LoginBut'>
                         <IonButton fill='outline' type='submit'><IonIcon slot="start" icon={keyOutline}/>LogIn</IonButton>
                     </IonCol>
-                    <IonCol><Link to="/registration"><IonButton fill='outline'><IonIcon slot='start' icon={readerOutline}/>Register</IonButton></Link></IonCol>
+                    <IonCol><IonRouterLink routerLink="/registration"><IonButton fill='outline'><IonIcon slot='start' icon={readerOutline}/>Register</IonButton></IonRouterLink></IonCol>
                 </IonRow>
             </IonGrid>
         </IonContent>
