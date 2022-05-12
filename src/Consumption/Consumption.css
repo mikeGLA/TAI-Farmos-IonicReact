@@ -1,0 +1,169 @@
+.Consumption-header {
+    text-align: center;
+    background: linear-gradient(180deg, #009CFF 0%, #DC257D 100%);
+    border-radius: 0px 0px 18px 18px;
+    height: 230px;
+  }
+  
+.Consumption-body {
+  height: 580px;
+  left: 0px;
+  right: 0px;
+  background: white;
+}
+
+.Consumption-BackButton{
+    text-align: left;
+    margin-left: 20px ;
+    padding-top: 55px;
+  }
+
+.FlexResource-Icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Consumption-ResourceConsumption{
+    margin-left: 20px;
+    text-align: left;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    height: 17%;
+}
+
+.Consumption-Location{
+    font-size: 12px;
+    color: #B5B8BE;
+    padding-bottom:50px;
+}
+
+.Icon-Round{
+    background-color: white;
+    width: 58px;
+    height: 58px;
+    border-radius: 100%;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.WaterDrop-Edit{
+    text-align: center;
+    margin: auto;
+    margin-top: 7px;
+}
+
+.Consumption-Date{
+    text-align: center;
+  }
+  
+  .Date-Day-Active{
+    font-style: normal;
+    color: #009CFF;
+  
+  }
+  
+  .Date-Month-Active{
+    color: #009CFF;
+    font-style: normal;
+  }
+  
+  .Date-Year-Active{
+    color: #009CFF;
+    font-style: normal;
+  }
+  
+  .Consumption-Date button{
+    background-color: white;
+    border: 0px white;
+  }
+  
+  .Date-Day{
+    font-style: normal;
+    color: #676C6D;
+  }
+  
+  .Date-Month{
+    font-style: normal;
+    color: #676C6D;
+  }
+  
+  .Date-Year{
+    font-style: normal;
+    color: #676C6D;
+  }
+  
+  .Consumption-Date span{
+    font-size:17px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    font-style: normal;
+    color: #676C6D;
+  }
+
+  .Consumption-Cost{
+    height: 150px;
+    margin: 15px 13px 0px 13px;
+    text-align: center;
+    border: 1px solid #E3E6E6;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .WaterPrice-HalfCircle{
+    width: 100px;
+    height: 100px;
+    border: 12px solid #009CFF;
+    border-bottom-color: white;
+    border-radius: 80px;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .WaterPrice-Text{
+      display: flex;
+      flex-direction: column;
+  }
+.Price{
+      font-weight: bold;
+  }
+
+.Unit{
+    font-weight: bold;
+}
+
+  .WaterPrice-Text .Unit{
+      margin-top: -5px;
+  }
+ 
+  .ElectricPrice-HalfCircle{
+    width: 100px;
+    height: 100px;
+    border: 12px solid #009CFF;
+    border-bottom-color: white;
+    border-radius: 80px;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .ElectricPrice-Text{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .ElectricPrice-Text .Unit{
+    margin-top: -5px;
+}
+
+  .ElectricPrice-Label{
+    margin-top: -22px;
+    margin-left: 30px;
+    width: 110px;
+  }
+
+  
