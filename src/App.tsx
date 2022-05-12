@@ -3,8 +3,8 @@ import { IonApp, IonFooter, IonRouterOutlet, IonToolbar, setupIonicReact } from 
 import { IonReactRouter } from '@ionic/react-router';
 import LoginPage from './LoginPage/LoginPage';
 import RegisterPage from './LoginPage/RegisterPage/RegisterPage';
-import Dashboard from "./Dashboard/Dashboard"
-import Consumption from "./Consumption/Consumption"
+import Dashboard from "./Dashboard/Dashboard";
+import Consumption from "./Consumption/Consumption";
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

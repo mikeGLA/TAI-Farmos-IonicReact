@@ -1,0 +1,223 @@
+.SmallPanel-FodderBox-control{
+    height: 500px;
+    width: 348px;
+    margin: auto;
+    background: #FFFFFF;
+    border: 1px solid #E3E6E6;
+    border-radius: 12px;
+}
+
+.FodderImage-Edit{
+    padding: auto;
+} 
+
+.container-img{
+    height: 150px;
+}
+
+.FodderBox-PlantCount{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    height: 5px;
+}
+
+.FodderBox-TypeName{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    height: 25px;
+}
+
+.FodderBox-Location{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #B5B8BE;
+}
+
+.FodderBox-Monitor{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+
+.FodderBox-LightDark{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 80px;
+    background: #FFFFFF;
+    border: 1px solid #FBF0E5;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.LightDark-SunEdit{
+    height: 40px;
+    width: 40px;
+    margin: 19px;
+}
+
+.FodderBox-Status{
+    margin-right: 20px;
+    height: 100px;
+    margin-left: 23px;
+}
+
+.FodderBox-Temp{
+    /* margin-left: 23px; */
+    letter-spacing: 12px;
+}
+
+ 
+
+.wind, .rainning{
+    
+    margin-left: 12px;
+}
+
+.humid > span{
+    color: #8077ED;
+    margin-left: 4px;
+}
+
+.wind > span{
+    margin-left: 4px;
+    color: #4BD09F;
+}
+
+.rainning > span{
+    margin-left: 4px;
+    color: #77BBED;
+}
+
+.FodderBox-Action{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* ----- Tobacco CSS card below ----- */
+
+.SmallPanel-TobaccoBox-control{
+    height: 500px;
+    width: 348px;
+    margin: auto;
+    background: #FFFFFF;
+    border: 1px solid #E3E6E6;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.TobaccoImage-Edit{
+    margin: 10px;
+    border-radius: 10px ;
+
+}
+
+.container-img{
+    height: 180px;
+
+}
+
+.TobaccoBox-PlantCount{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    height: 5px;
+}
+
+.TobaccoBox-TypeName{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    height: 25px;
+}
+
+.TobaccoBox-Location{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #B5B8BE;
+}
+
+.TobaccoBox-Monitor{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+
+.TobaccoBox-LightDark{
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 80px;
+    background: #FFFFFF;
+    border: 1px solid #FBF0E5;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.LightDark-SunEdit{
+    height: 40px;
+    width: 40px;
+    margin: 19px;
+}
+
+.TobaccoBox-Status{
+    margin-right: 20px;
+    height: 100px;
+    margin-left: 23px;
+}
+
+.TobaccoBox-Temp{
+    /* margin-left: 23px; */
+    letter-spacing: 2px;
+}
+
+ 
+
+.wind, .rainning{
+    
+    margin-left: 12px;
+}
+
+.humid > span{
+    color: #8077ED;
+    margin-left: 4px;
+}
+
+.wind > span{
+    margin-left: 4px;
+    color: #4BD09F;
+}
+
+.rainning > span{
+    margin-left: 4px;
+    color: #77BBED;
+}
+
+.TobaccoBox-Action{
+    margin-left: 20px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
