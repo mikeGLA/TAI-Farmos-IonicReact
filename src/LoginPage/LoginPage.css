@@ -1,13 +1,61 @@
-.Ion-Header{
-    font-size: x-large;
+.loginPage-All{
+    height: 590px;
+    text-align: center;
 }
 
-.TAI-Head-Logo{
-    text-align: center;
-    margin: 20px auto auto;
+.Tailogo{
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-.Log-Re-Button{
-    text-align: center;
-    margin-top: 20px;
+.UsernameBox{
+    padding-top: 20px;
 }
+
+.Password-label{
+    padding-top: 10px;
+}
+
+.PasswordBox{
+    padding-top: 20px;
+}
+
+.SubmitBox{
+    padding-top: 20px;
+    word-spacing: 20px;
+}
+
+.loginbut{
+    margin-right: 20px;
+ 
+}
+ 
+ 
+
+.loadiner-container{
+    margin-top: 55%;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin:auto;
+    margin-top:55%;
+    text-align: center;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

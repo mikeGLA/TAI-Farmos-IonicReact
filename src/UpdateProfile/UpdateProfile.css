@@ -1,0 +1,12 @@
+.allInfoBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.taiLogo{
+    flex: 1 1 90px;
+}
+

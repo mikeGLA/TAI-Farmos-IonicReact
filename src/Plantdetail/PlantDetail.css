@@ -1,0 +1,565 @@
+.PlantDetail-header {
+    text-align: center;
+    background: linear-gradient(180deg, #009CFF 0%, #DC257D 100%);
+    height: 343px;
+    border-radius: 0px 0px 18px 18px;
+  }
+  
+.PlantDetail-body {
+  height: 510px;
+  left: 0px;
+  right: 0px;
+  background: #E5E5E5;
+}
+
+.PlantDetail-BackButton{
+    text-align: left;
+    margin-left: 20px ;
+    padding-top: 55px;
+  }
+
+.HeaderPlant-Text{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 40px;
+    line-height: 1.5;
+}   
+
+.ProductCount, .ProductLocation{
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #F2D1B2;
+}
+
+.ProductName{
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+}
+
+.LeafIcon{
+    margin-top: 15px;
+}
+
+/* Decorate 3 grid inside Plantmonitor */
+.PlantDetail-Monitor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 22px 0 22px;
+    height: 100px;
+    background: rgba(219, 223, 227, 0.75);
+    line-height: 0.5;
+}
+
+.PlantDetail-Monitor > div{
+    margin-top: 10px;
+}
+
+.PlantDetail-WaterLighting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 22px;
+}
+/* ----------Start of Body CSS and Water control Card----------------- */
+.Water-Control{
+    height: 120px;
+    width: 155px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/* -------------------CSS change when WATER button clicked is here---------------- */
+.Water-Control-Active{
+    height: 120px;
+    width: 155px;
+    background-color: #51AFEDB2;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    line-height: 1.5;
+}
+
+
+
+.WaterIcon-Button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Water-Icon{
+    height: 35px;
+    width: 35px;
+    background-color:#F3F6F6;
+    border-radius: 100%;
+    margin: 16px 0px 0px 16px;
+}
+
+.Water-Drop{
+    margin: 7px 7px 7px 8px;
+}
+/* --------------CSS Water Button is below--------------- */
+.Water-Control-Switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+  
+.Water-Control-Switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.Water-Swtich-Slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 40px;
+}
+
+.Water-Swtich-Slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    bottom: 0px;
+    background-color: grey;
+    transition: 0.4s;
+    border-radius: 100%;
+}
+
+input:checked + .Water-Swtich-Slider{
+    background-color: #80dfff;
+}
+
+input:checked + .Water-Swtich-Slider::before{
+    transform: translateX(32px);
+}
+
+/* --------End of CSS Water button----------- */
+
+.WaterSpray-Label{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.WaterSpray-CountDown{
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* -------End of Water Control CSS and Starting of Lightning Control Card---------- */
+
+
+.Lighting-Control{
+    height: 120px;
+    width: 155px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/* -------CSS When Lightning Button Clicked------- */
+.Lighting-Control-Active{
+    height: 120px;
+    width: 155px;
+    background: rgba(81, 175, 237, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    line-height: 1.5;
+  }
+
+.LightingIcon-Button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.MoonIcon-Background{
+    height: 35px;
+    width: 35px;
+    background-color: #F3F7F6;
+    border-radius: 100%;
+    margin: 16px 0px 0px 16px;
+}
+
+.MoonIcon{
+    margin: 7px 7px 7px 8px;
+}
+
+/* --------Lightning Control button start making--------------- */
+
+.Lighting-Control-Switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+  
+.Lighting-Control-Switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.Lighting-Swtich-Slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 40px;
+}
+  
+.Lighting-Swtich-Slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    bottom: px;
+    background-color: grey;
+    transition: 0.4s;
+    border-radius: 100%;
+  
+}
+  
+input:checked + .Lighting-Swtich-Slider{
+    background-color: #80dfff;
+}
+  
+input:checked + .Lighting-Swtich-Slider::before{
+    transform: translateX(32px);
+}
+
+/* ------------Lighting Button making end-------------- */
+
+.Lighting-Label{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.Lighting-CountDown{
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* ------------Finish Lighting Card and start of row 2 room fan------------ */
+
+.RoomFan-Control{
+    height: 120px;
+    width: 155px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+
+/* -------CSS When romm fan button clicked is here--------- */
+.RoomFan-Control-active{
+    height: 120px;
+    width: 155px;
+    background: rgba(81, 175, 237, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 1.5;
+    color: white;
+}
+
+.RoomFanIcon-Button{
+    height: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.FanIcon-Background{
+    height: 35px;
+    width: 35px;
+    background-color: #F3F7F6;
+    border-radius: 100%;
+    margin: 16px 0px 0px 16px;
+}
+
+.FanIcon{
+    margin: 6px 7px 5px 7px;
+}
+
+/* ---------making of fan control button----------- */
+
+.RoomFan-Control-Switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+  
+.RoomFan-Control-Switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.RoomFan-Swtich-Slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 40px;
+}
+  
+.RoomFan-Swtich-Slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    bottom: px;
+    background-color: grey;
+    transition: 0.4s;
+    border-radius: 100%;
+  
+}
+  
+input:checked + .RoomFan-Swtich-Slider{
+    background-color: #80dfff;
+}
+  
+input:checked + .RoomFan-Swtich-Slider::before{
+    transform: translateX(32px);
+  
+}
+
+/* -------------finish making fan control button--------- */
+
+.RoomFan-Label{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.RoomFan-CountDown{
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 14px;
+}
+/* ----------Finish making room fan card and start making Fertilizer card------------- */
+
+.Fertilizer-Control{
+    height: 120px;
+    width: 155px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+/* ---------CSS When Fertilizer Clicked is here------------- */
+.Fertilizer-Control-Active{
+    height: 120px;
+    width: 155px;
+    background: rgba(81, 175, 237, 0.7);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 1.5;
+    color: white;
+}
+
+.FertilizerIcon-Button{
+    height: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Fertilizer-BackGround{
+    height: 35px;
+    width: 35px;
+    background-color: #F3F7F6;
+    border-radius: 100%;
+    margin: 16px 0px 0px 16px;
+}
+  
+.FertilizerIcon{
+    margin: 6px 7px 7px 5px;
+}
+/* ------------Start making fertilizer control-------------- */
+.Fertilizer-Control-Switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+  
+.Fertilizer-Control-Switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.Fertilizer-Swtich-Slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 40px;
+}
+  
+.Fertilizer-Swtich-Slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    bottom: px;
+    background-color: grey;
+    transition: 0.4s;
+    border-radius: 100%;
+}
+  
+input:checked + .Fertilizer-Swtich-Slider{
+    background-color: #80dfff;
+}
+  
+input:checked + .Fertilizer-Swtich-Slider::before{
+    transform: translateX(32px);
+}
+/* ----------Finish making Fertilizer Button-------------- */
+
+.Fertilizer-Label{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.Fertilizer-CountDown{
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 14px;
+}
+/* --------------Finish Making row 2 and Fertilizer control Card and start making automatic sys------------- */
+.System-Automatic{
+    background-color: white;  ;
+    height: 100px;
+    width: 335;
+    margin: 20px 20px 0px 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    text-align: center;
+    line-height: 2;
+}
+
+.System-Automatic-Active{
+    background-color: rgba(81, 175, 237, 0.7);
+    height: 100px;
+    width: 335;
+    margin: 20px 20px 0px 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    text-align: center;
+    line-height: 2;
+    color: white;
+}
+
+.Automate-Background{
+    background-color: #F3F7F6;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 100%;
+}
+
+.Automate-Chip-Image{
+    margin-top: 8px;
+}
+
+/* ----Middle Grid---- */
+
+.Automate-Label-Timer{
+    margin: auto;
+    font-weight: bold;
+}
+
+/* ---------Start making automatic control button------------- */
+
+.Automate-Control-Switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+  
+.Automate-Control-Switch input{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+  
+.Automate-Control-Slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 40px;
+    text-align: left;
+}
+  
+.Automate-Control-Slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    transition: 0.4s;
+    border-radius: 100%;
+}
+
+input:checked + .Automate-Control-Slider{
+    background-color: #80dfff;
+}
+  
+input:checked + .Automate-Control-Slider::before{
+    transform: translateX(32px);
+}
+
+/* -------------Finish of CSS Below will be Responsive CSS---------- */

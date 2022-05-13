@@ -2,9 +2,12 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonFooter, IonRouterOutlet, IonToolbar, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import LoginPage from './LoginPage/LoginPage';
-import RegisterPage from './LoginPage/RegisterPage/RegisterPage';
+import RegisterPage from './RegisterPage/RegisterPage';
 import Dashboard from "./Dashboard/Dashboard";
 import Consumption from "./Consumption/Consumption";
+import PlantDetail from "./Plantdetail/PlantDetail";
+import System from "./System/System"
+import UpdateProfile from './UpdateProfile/UpdateProfile';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,8 +25,7 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 
-/* Theme variables */
-import './theme/variables.css';
+
 
 
 setupIonicReact();
@@ -43,6 +45,15 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/consumption">
           <Consumption/>
+        </Route>
+        <Route exact path="/plantdetail">
+          <PlantDetail/>
+        </Route>
+        <Route exact path="/system">
+          <System/>
+        </Route>
+        <Route exact path="/updateprofile">
+          <UpdateProfile/>
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
