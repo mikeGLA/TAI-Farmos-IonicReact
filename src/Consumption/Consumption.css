@@ -6,7 +6,7 @@
   }
   
 .Consumption-body {
-  height: 580px;
+  height: 480px;
   left: 0px;
   right: 0px;
   background: white;
@@ -138,7 +138,7 @@
 }
 
   .WaterPrice-Text .Unit{
-      margin-top: -5px;
+      margin-top: -2px;
   }
  
   .ElectricPrice-HalfCircle{
@@ -152,18 +152,16 @@
   }
 
   .ElectricPrice-Text{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .ElectricPrice-Text .Unit{
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
   .ElectricPrice-Label{
-    margin-top: -22px;
-    margin-left: 30px;
-    width: 110px;
+    margin-top: -12px;
   }
 
   

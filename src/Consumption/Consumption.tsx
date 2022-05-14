@@ -74,11 +74,10 @@ const Consumption = () => {
                                     <span className="Price">34</span>
                                     <span className="Unit">THB</span>
                                     <span className="ElectricPrice-Image"><img src={ThunderIcon} width="30px" height="32px"/></span><br/>
-                                    
+                                    <div className="ElectricPrice-Label">Electricity <div>Price</div></div>
                                 </div>
-                                
                             </div>
-                            <div className="ElectricPrice-Label">Electricity Price</div>
+                            
                         </div>
                     </div>
 
